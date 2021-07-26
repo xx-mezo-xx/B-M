@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set('Africa/Cairo');
 if(!file_exists('config.json')){
-	$token = readline('-Hi Super Enter Token: ');
-	$id = readline('-Hi Super Enter Id: ');
+	$token = readline('-Hi Mezo Enter Token: ');
+	$id = readline('-Enter Id: ');
 	file_put_contents('config.json', json_encode(['id'=>$id,'token'=>$token]));
 	
 } else {
